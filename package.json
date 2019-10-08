@@ -1,0 +1,35 @@
+{
+  "name": "zealcord.js",
+  "version": "1.1.0",
+  "description": "An API Wrapper for Zealcord Development",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint --ignore-path .gitignore ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zealcordNation/zealcord.js.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "DiscordJS",
+    "Discord",
+    "Bot",
+    "NPM",
+    "Zealcord",
+    "Nation",
+    "zealcord.js"
+  ],
+  "author": "zarrttt_",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/zealcordNation/zealcord.js/issues"
+  },
+  "homepage": "https://github.com/zealcordNation/zealcord.js#readme",
+  "dependencies": {
+    "https": "^1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.1"
+  }
+}
