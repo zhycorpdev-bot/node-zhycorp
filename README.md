@@ -5,7 +5,7 @@ An API Wrapper for [Zealcord Development API(s)](https://app.zealcord.xyz/api)
 <div align="center">
     <p>
         <a href="https://npmjs.com/package/zealcord.js"><img
-                src="https://nodei.co/npm/zealcord.js.png?downloads=true&stars=true" /></a>
+                src="https://nodei.co/npm/zealcord.js.png?downloads=true&stars=false" /></a>
         <br>
         <a href="https://travis-ci.com/zealcordNation/zealcord.js"><img
                 src="https://travis-ci.com/zealcordNation/zealcord.js.svg?branch=master" /></a>
