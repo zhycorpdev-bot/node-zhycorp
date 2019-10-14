@@ -10,7 +10,7 @@ module.exports = class zealcordDev {
      * @param {String} ownerID Your ID
      */
     constructor(token, clientID, ownerID) {
-        this.baseURL = "app.discordbotsnation.xyz";
+        this.baseURL = "app.zealcord.xyz";
         this.baseAPIURL = this.baseURL + "/api";
         // if (!client.user.id) throw new Error("Unsupported Library")
         const request = new zealcordRequest(this.baseURL);
