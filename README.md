@@ -1,6 +1,6 @@
 # Zealcord Development API Wrapper
 
-An API Wrapper for [Zealcord Development API(s)](https://app.zealcord.xyz/api)
+An API Wrapper for [Zealcord Development API(s)](https://app.zealcord.xyz/api/bots)
 
 <div align="center">
     <p>

@@ -1,6 +1,6 @@
 {
   "name": "zealcord.js",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "An API Wrapper for Zealcord Development",
   "main": "index.js",
   "scripts": {
