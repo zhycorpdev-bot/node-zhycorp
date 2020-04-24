@@ -31,11 +31,7 @@ const Discord = require("discord.js");
 const zealcordDev = require("zealcord.js");
 
 const bot = new Discord.Client();
-const zealcord = new zealcordDev(
-    "Your Zealcord API Tokens",
-    "Your Bot User IDs",
-    "Your IDs"
-);
+const zealcord = new zealcordDev("Your Zealcord API Token", "Your Bot User ID", "Your ID");
 
 bot.on("ready", () => console.log("Ready!"));
 
@@ -45,12 +41,8 @@ bot.on("message", async message => {
     if (messsage.content === ".bot") {
         var botData = await zealcord.getBot(args[0]);
         if (!botData || botData === undefined)
-            return message.channel.send(
-                "Sorry, but that Bot was not registered yet on Zealcord Nation."
-            );
-        message.channel.send(
-            `${botData.bot.tag} by ${botData.owner.tag} with Prefix ${botData.prefix}!`
-        );
+            return message.channel.send("Sorry, but that Bot was not registered yet on Zealcord Nation");
+        message.channel.send(`${botData.bot.tag} by ${botData.owner.tag} with Prefix ${botData.prefix}!`);
     }
 });
 
@@ -64,11 +56,7 @@ const Discord = require("discord.js");
 const zealcordDev = require("zealcord.js");
 
 const bot = new Discord.Client();
-const zealcord = new zealcordDev(
-    "Your Zealcord API Tokens",
-    "Your Bot User IDs",
-    "Your IDs"
-);
+const zealcord = new zealcordDev("Your Zealcord API Token", "Your Bot User ID", "Your ID");
 
 bot.on("ready", () => console.log("Ready!"));
 
@@ -78,12 +66,8 @@ bot.on("message", message => {
     if (messsage.content === ".bot") {
         zealcord.getBot(args[0]).then(botData => {
             if (!botData || botData === undefined)
-                return message.channel.send(
-                    "Sorry, but that Bot was not registered yet on Zealcord Nation."
-                );
-            message.channel.send(
-                `${botData.bot.tag} by ${botData.owner.tag} with Prefix ${botData.prefix}!`
-            );
+                return message.channel.send("Sorry, but that Bot was not registered yet on Zealcord Nation");
+            message.channel.send(`${botData.bot.tag} by ${botData.owner.tag} with Prefix ${botData.prefix}!`);
         });
     }
 });

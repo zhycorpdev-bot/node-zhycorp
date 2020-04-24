@@ -29,7 +29,7 @@ module.exports = class zealcordDev {
                     if (valid === "true") {
                         fetchToken(token, clientID, ownerID, request).then(fetchedToken => {
                             // console.log(fetchedToken.ownedBy.bots.filter(bot => bot.id === clientID));
-                            console.log(`[zealcordAPI] You're now Logged in as: ${fetchedToken.ownedBy.tag}!`);
+                            console.log(`[zealcordAPI] You're now logged in as: ${fetchedToken.ownedBy.tag}!`);
                             loggedInAs = fetchedToken.ownedBy;
                         });
                     }
@@ -44,7 +44,7 @@ module.exports = class zealcordDev {
         this._request = request;
 
         /**
-         *  Get any specified bot data using bot id
+         *  Get any specified bot data using Bot ID
          * @param {String} ID Bot's user ID
          * @returns {Promise<Object>} A promise that contains data of the bot
          */
@@ -93,7 +93,7 @@ module.exports = class zealcordDev {
             delete body.bot.ownedBy.bots;
             delete body.bot.ownedBy.createdTimestamp;
             body.bot.ownedBy.createdAt = new Date(bodyBotOwnedByCreatedTimestamp);
-            body.bot.ownedBy.createdTimestamp = bodyBotOwnedByCreatedTimestamp; // A litte tricky things here xD
+            body.bot.ownedBy.createdTimestamp = bodyBotOwnedByCreatedTimestamp;
             body.bot.ownedBy.bots = bodyBotOwnedByBots;
             return body;
         };

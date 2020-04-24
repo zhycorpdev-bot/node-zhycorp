@@ -49,7 +49,7 @@ class zealcordRequest {
                             resolve(response);
                         } else {
                             if (res.statusCode === 403 && response.body.banned === true) {
-                                const bannedErr = new Error(`[zealcordAPI] You're Banned from Zealcord Nation's website, details:\n ${response.body.reason}`);
+                                const bannedErr = new Error(`[zealcordAPI] You're Banned from Zealcord's website, details:\n ${response.body.reason}`);
                                 Object.assign(bannedErr, response);
                                 reject(bannedErr);
                                 return;
@@ -110,7 +110,7 @@ class zealcordRequest {
                             resolve(response);
                         } else {
                             if (res.statusCode === 403 && response.body.banned === true) {
-                                const bannedErr = new Error(`[zealcordAPI] You're Banned from Zealcord Nation's website, details:\n ${response.body.reason}`);
+                                const bannedErr = new Error(`[zealcordAPI] You're Banned from Zealcord's website, details:\n ${response.body.reason}`);
                                 Object.assign(bannedErr, response);
                                 reject(bannedErr);
                                 return;

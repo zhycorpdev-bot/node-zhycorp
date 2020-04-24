@@ -1,7 +1,7 @@
                     GNU AFFERO GENERAL PUBLIC LICENSE
                        Version 3, 19 November 2007
 
- Copyright (C) 2019 Zealcord Nation <https://discordbotsnation.xyz/>
+ Copyright (C) 2020 Zealcord Nation <https://zealcord.xyz/>
  Everyone is permitted to copy and distribute verbatim copies
  of this license document, but changing it is not allowed.
 
