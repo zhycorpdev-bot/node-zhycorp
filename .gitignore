@@ -65,3 +65,7 @@ typings/
 .sqlite
 .db
 economy.sqlite
+
+# Git
+.git/
+.github/
