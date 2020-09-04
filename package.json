@@ -1,36 +1,27 @@
 {
-  "name": "@zealcordNation/zealcord.js",
-  "version": "1.1.2",
-  "description": "An API Wrapper for Zealcord Development",
-  "main": "index.js",
+  "name": "zhycorp.js",
+  "version": "2.0.0",
+  "description": "Simple API wrapper for Zhycorp Bot List",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "eslint --ignore-path .gitignore ."
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zealcordNation/zealcord.js.git"
+    "test": "tsc -p ."
   },
   "keywords": [
-    "JavaScript",
-    "DiscordJS",
-    "Discord",
-    "Bot",
-    "NPM",
-    "Zealcord",
-    "Nation",
-    "Development",
-    "zealcord.js"
+    "NodeJS",
+    "Npm",
+    "Zhycorp"
   ],
-  "author": "zarrttt_",
-  "license": "AGPL-3.0",
-  "bugs": {
-    "url": "https://github.com/zealcordNation/zealcord.js/issues"
-  },
-  "homepage": "https://github.com/zealcordNation/zealcord.js#readme",
-  "dependencies": {
-    "https": "^1.0.0"
-  },
+  "author": "Hanif",
+  "license": "MIT",
   "devDependencies": {
-    "eslint": "^5.12.1"
+    "@types/cheerio": "^0.22.21",
+    "@types/node": "^14.6.4",
+    "@types/superagent": "^4.1.10",
+    "typescript": "^4.0.2"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "superagent": "^6.1.0"
   }
 }
