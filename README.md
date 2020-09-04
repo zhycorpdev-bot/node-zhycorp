@@ -1,3 +1,3 @@
 # zhycorp.js
 
-STILL IN WIP!
+STILL IN WIP
