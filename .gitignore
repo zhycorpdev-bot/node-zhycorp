@@ -1,5 +1,5 @@
 # Node depencies modules directory
 node_modules/
 
-# Development
 dist/
+yarn-error.log
