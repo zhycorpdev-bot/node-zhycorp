@@ -37,4 +37,4 @@ jobs:
           user-name: "Zhycorp"
           user-email: "contact@zhycorp.xyz"
           message: "Automatically built unbuilt typescript"
-          directories: ./dist
+          directories: ./
