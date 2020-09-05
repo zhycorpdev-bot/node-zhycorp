@@ -1,16 +1,18 @@
 {
   "compilerOptions": {
-    "allowJs": true,
-    "target": "es6",
+    "target": "es2017",
     "module": "commonjs",
     "declaration": true,
-    "sourceMap": true,
     "outDir": "./dist/",
     "strict": true,
+    "baseUrl": "./src",
     "esModuleInterop": true,
-    "sourceRoot": "./src",
+    "resolveJsonModule": true,
     "typeRoots": [
-      "./node_modules/@types"
+      "./node_modules/@types",
+      "./src/interfaces"
     ]
-  }
+  },
+  "include": ["*.ts", "src/**/*.ts"],
+  "exclude": ["node_modules/**", "dist"]
 }

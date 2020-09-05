@@ -6,5 +6,5 @@ export interface Bot {
     };
     prefix: string;
     approved: string;
-    regis: string;
+    registered: string;
 }
