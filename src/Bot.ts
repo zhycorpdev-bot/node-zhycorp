@@ -1,17 +1,12 @@
 import { get } from "superagent";
 import { load } from "cheerio";
 
-const botURL: string = "https://zhycorp.xyz/bot/";
-let result: string[] = [];
+const botURL = "https://zhycorp.xyz/bot/";
 
-async function getOwner(id: string) {
+export async function getOwner(id: string): Promise<string> {
     const data = await get(botURL + id);
     const $ = load(data.body);
 
-    $("p").each((i, el) => {
-        result[i] = $(el).text().trim();
-    });
+    const result = $("p").map((i, el) => $(el).text().trim()).get();
     return result.filter(item => item.includes("#"))[0];
 }
-
-export { getOwner };
