@@ -1,10 +1,5 @@
 # Node depencies modules directory
 node_modules/
 
-<<<<<<< HEAD
-# Build files
-dist/
-=======
 dist/
 yarn-error.log
->>>>>>> 4e25000f8c49191cd7e07abc24abd015d70da1e4
