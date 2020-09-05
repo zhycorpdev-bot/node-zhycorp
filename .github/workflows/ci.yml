@@ -57,3 +57,4 @@ jobs:
         git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
         git commit -m "chore(build) Build from ${GITHUB_SHA}" || true
         git push origin ${GITHUB_REF}
+      continue-on-error: true
