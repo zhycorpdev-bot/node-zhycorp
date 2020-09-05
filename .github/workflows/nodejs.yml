@@ -22,6 +22,19 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: Install dependencies
-      run: yarn install --frozen-lockfile
+      run: yarn install
     - name: Test code
       run: yarn test
+  build-push:
+    runs-on: ubuntu-latest
+    name: Builds Typescript
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Building Typescript
+        uses: FuLagann/tsc-build-push@v1
+        with:
+          user-name: "Zhycorp"
+          user-email: "contact@zhycorp.xyz"
+          message: "Automatically built unbuilt typescript"
+          directories: ./dist

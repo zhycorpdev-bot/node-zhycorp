@@ -13,6 +13,6 @@
       "./src/interfaces"
     ]
   },
-  "include": ["./*.ts", "./src/*.ts"],
-  "exclude": ["node_modules/**", "test", "dist"]
+  "include": ["*.ts", "src/**/*.ts"],
+  "exclude": ["node_modules/**", "dist"]
 }
