@@ -1,34 +1,28 @@
-import superagent from "superagent";
-import { Bot } from "./Types";
-import { getOwner } from "./Bot";
+/* eslint-disable @typescript-eslint/naming-convention */
+import { get } from "superagent";
+import { getOwner } from "./api/Bot";
+import ZhycorpError from "./util/ZhycorpError";
+import type { Bot } from "./interfaces";
 
-class ZhycorpWrapper {
-    readonly baseURL = "https://bot.zhycorp.xyz";
-    constructor() {}
+export class ZhycorpWrapper {
+    private readonly baseURL = "https://bot.zhycorp.xyz";
+    public async getBot(id: string): Promise<Bot> {
+        const USER_PATTERN = /\d{17,19}/g;
+        if (!USER_PATTERN.test(id)) throw Error("Invalid user id!");
 
-    async getBot(id: string): Promise < Bot > {
-
-        if (isNaN(id)) throw Error("ID must be number");
-        if (id.length != 18) throw Error("Invalid ID");
-
-        const { body: result } = await superagent.get(this.baseURL);
-
-        if (!result[id]) throw Error("Not Found");
+        const { body: result } = await get(this.baseURL);
+        if (!result[id]) throw new ZhycorpError("Not Found");
         const bot = result[id];
         const user = await getOwner(id);
-        const structures = {
+        return {
+            approved: bot.approved,
             botID: bot.botID,
             owner: {
                 userID: bot.ownerID,
                 userTag: user
             },
             prefix: bot.prefix,
-            approved: bot.approved ? "yes" : "no",
-            regis: bot.registered ? "yes" : "no"
+            registered: bot.registered
         };
-
-        return structures;
     }
 }
-
-export { ZhycorpWrapper };

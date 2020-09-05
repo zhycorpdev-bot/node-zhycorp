@@ -5,19 +5,30 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "test": "tsc -p ."
+    "build": "rimraf dist && tsc",
+    "lint": "eslint --ignore-path .gitignore \"**/*.+(ts|js)\"",
+    "lint:fix": "eslint --ignore-path .gitignore \"**/*.+(ts|js)\" --fix",
+    "test": "yarn lint && yarn build"
   },
   "keywords": [
     "NodeJS",
     "Npm",
     "Zhycorp"
   ],
-  "author": "Hanif",
-  "license": "MIT",
+  "author": "Zhycorp",
+  "license": "AGPL-3.0",
+  "eslintConfig": {
+    "extends": "@hazmi35/eslint-config/typescript"
+  },
   "devDependencies": {
+    "@hazmi35/eslint-config": "^1.6.1",
     "@types/cheerio": "^0.22.21",
     "@types/node": "^14.6.4",
     "@types/superagent": "^4.1.10",
+    "@typescript-eslint/eslint-plugin": "^4.0.1",
+    "@typescript-eslint/parser": "^4.0.1",
+    "eslint": "^7.8.1",
+    "rimraf": "^3.0.2",
     "typescript": "^4.0.2"
   },
   "dependencies": {
