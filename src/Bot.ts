@@ -1,7 +1,7 @@
 import { get } from "superagent";
 import { load } from "cheerio";
 
-const botURL: string = "https://bot.zhycorp.xyz/";
+const botURL: string = "https://zhycorp.xyz/bot/";
 let result: string[] = [];
 
 async function getOwner(id: string) {
