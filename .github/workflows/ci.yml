@@ -1,5 +1,5 @@
 
-name: Lint (Homepage)
+name: Lint & Compile code
 
 on:
   push:
