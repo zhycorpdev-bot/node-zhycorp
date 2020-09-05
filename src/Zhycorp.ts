@@ -1,22 +1,19 @@
-import superagent from "superagent";
-import { Bot } from "./Types";
+import { get } from "superagent";
 import { getOwner } from "./Bot";
+import type { Bot } from "./Types";
 
-class ZhycorpWrapper {
+export class ZhycorpWrapper {
     readonly baseURL = "https://bot.zhycorp.xyz";
-    constructor() {}
+    public async getBot(id: string): Promise<Bot> {
+        const USER_PATTERN = /\d{17,19}/g;
+        if (!USER_PATTERN.test(id)) throw Error("Invalid user id!");
 
-    async getBot(id: string): Promise < Bot > {
-
-        if (isNaN(id)) throw Error("ID must be number");
-        if (id.length != 18) throw Error("Invalid ID");
-
-        const { body: result } = await superagent.get(this.baseURL);
+        const { body: result } = await get(this.baseURL);
 
         if (!result[id]) throw Error("Not Found");
         const bot = result[id];
         const user = await getOwner(id);
-        const structures = {
+        return {
             botID: bot.botID,
             owner: {
                 userID: bot.ownerID,
@@ -26,9 +23,5 @@ class ZhycorpWrapper {
             approved: bot.approved ? "yes" : "no",
             regis: bot.registered ? "yes" : "no"
         };
-
-        return structures;
     }
 }
-
-export { ZhycorpWrapper };

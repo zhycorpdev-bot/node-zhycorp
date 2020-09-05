@@ -1,2 +1,1 @@
-declare function getOwner(id: string): Promise < string > ;
-export { getOwner };
+export declare function getOwner(id: string): Promise<string>;
