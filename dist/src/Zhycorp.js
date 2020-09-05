@@ -34,4 +34,3 @@ class ZhycorpWrapper {
     }
 }
 exports.ZhycorpWrapper = ZhycorpWrapper;
-//# sourceMappingURL=Zhycorp.js.map
