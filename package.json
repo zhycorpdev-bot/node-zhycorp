@@ -2,29 +2,33 @@
   "name": "zhycorp.js",
   "version": "1.0.1",
   "description": "Simple API wrapper for Zhycorp Bot List",
+  "keywords": [
+    "wrapper",
+    "api",
+    "zhycorp"
+  ],
+  "license": "AGPL-3.0",
+  "author": "Zhycorp",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "rimraf dist && tsc",
     "lint": "eslint --ignore-path .gitignore \"**/*.+(ts|js)\"",
     "lint:fix": "eslint --ignore-path .gitignore \"**/*.+(ts|js)\" --fix",
-    "test": "yarn lint && yarn build",
-    "release": "standard-version"
+    "release": "standard-version",
+    "test": "yarn lint && yarn build"
   },
-  "keywords": [
-    "wrapper",
-    "api",
-    "zhycorp"
-  ],
-  "author": "Zhycorp",
-  "license": "AGPL-3.0",
   "eslintConfig": {
-    "extends": "@hazmi35/eslint-config/typescript",
     "parserOptions": {
       "project": [
         "./tsconfig.json"
       ]
-    }
+    },
+    "extends": "@hazmi35/eslint-config/typescript"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "superagent": "^6.1.0"
   },
   "devDependencies": {
     "@hazmi35/eslint-config": "^1.6.1",
@@ -38,8 +42,7 @@
     "standard-version": "^9.0.0",
     "typescript": "^4.0.2"
   },
-  "dependencies": {
-    "cheerio": "^1.0.0-rc.3",
-    "superagent": "^6.1.0"
+  "engines": {
+    "node": ">=12.x"
   }
 }
