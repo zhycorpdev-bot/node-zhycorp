@@ -1,6 +1,6 @@
 {
   "name": "zhycorp.js",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "description": "Simple API wrapper for Zhycorp Bot List",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
