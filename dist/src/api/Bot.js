@@ -1,24 +1,13 @@
 "use strict";
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getOwner = void 0;
 const superagent_1 = require("superagent");
 const cheerio_1 = require("cheerio");
 const botURL = "https://zhycorp.xyz/bot";
-function getOwner(id) {
-    return __awaiter(this, void 0, void 0, function* () {
-        const { text } = yield superagent_1.get(`${botURL}/${id}`);
-        const $ = cheerio_1.load(text);
-        const result = $("p").map((i, el) => $(el).text().trim()).get();
-        return result[0].split("\n").find((res) => /(.*)#\d{4}/g.exec(res));
-    });
+async function getOwner(id) {
+    const { text } = await superagent_1.get(`${botURL}/${id}`);
+    const $ = cheerio_1.load(text);
+    const result = $("p").map((i, el) => $(el).text().trim()).get();
+    return result[0].split("\n").find((res) => /(.*)#\d{4}/g.exec(res));
 }
 exports.getOwner = getOwner;
