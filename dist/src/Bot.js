@@ -34,7 +34,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.getOwner = void 0;
 const superagent_1 = require("superagent");
 const cheerio_1 = require("cheerio");
-const botURL = "https://bot.zhycorp.xyz/";
+const botURL = "https://zhycorp.xyz/bot/";
 let result = [];
 
 function getOwner(id) {
