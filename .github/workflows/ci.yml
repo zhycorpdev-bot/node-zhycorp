@@ -52,7 +52,7 @@ jobs:
 
     - name: Push compiled code
       run: |
-        git add dist
+        git add dist -f
         git config user.name "${GITHUB_ACTOR}"
         git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
         git commit -m "chore(build) Build from ${GITHUB_SHA}" || true
