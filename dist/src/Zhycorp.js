@@ -47,14 +47,14 @@ class ZhycorpWrapper {
         return __awaiter(this, void 0, void 0, function* () {
             const aplha = new RegExp(/[a-z]/gi);
             if (aplha.test(id))
-                throw Error('ID must be a number!');
+                throw Error("ID must be a number");
             if (id.length != 18)
                 throw Error("Invalid ID");
             const {
                 body: result
             } = yield superagent_1.default.get(this.baseURL);
             if (!result[id])
-                throw Error('Not Found');
+                throw Error("Not Found");
             const bot = result[id];
             const user = yield Bot_1.getOwner(id);
             const structures = {
@@ -64,8 +64,8 @@ class ZhycorpWrapper {
                     userTag: user
                 },
                 prefix: bot.prefix,
-                approved: bot.approved ? 'yes' : 'nope',
-                regis: bot.registered ? 'yes' : 'nope'
+                approved: bot.approved ? "yes" : "no",
+                regis: bot.registered ? "yes" : "no"
             };
             return structures;
         });

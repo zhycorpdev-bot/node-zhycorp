@@ -23,8 +23,8 @@ class ZhycorpWrapper {
                 userTag: user
             },
             prefix: bot.prefix,
-            approved: bot.approved ? "yes" : "nope",
-            regis: bot.registered ? "yes" : "nope"
+            approved: bot.approved ? "yes" : "no",
+            regis: bot.registered ? "yes" : "no"
         };
 
         return structures;
