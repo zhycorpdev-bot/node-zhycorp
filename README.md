@@ -20,7 +20,7 @@ $ npm install zhycorp.js
 Example:
 ```json
 {
-	"Not": "Ready, yet"
+    "Not": "Ready, yet"
 }
 ```
 
