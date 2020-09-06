@@ -1,7 +1,7 @@
 <div align="center">
     <br />
     <p>
-        <a href="https://zhycorp.xyz"><img src="https://api.zhycorp.xyz/assets/images/logo.png" width="512" height="512"
+        <a href="https://zhycorp.xyz"><img src="https://api.zhycorp.xyz/assets/images/logo.png" width="124" height="124"
                 alt="zhycorp.js" /></a>
     </p>
     <br />
