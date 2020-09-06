@@ -2,19 +2,19 @@
     <br />
     <p>
         <a href="https://zhycorp.xyz"><img src="https://api.zhycorp.xyz/assets/images/logo.png" width="124" height="124"
-                alt="zhycorp.js" /></a>
+                alt="node-zhycorp" /></a>
     </p>
     <br />
     <p>
         <a href="https://discord.gg/DxenCeV"><img
                 src="https://img.shields.io/discord/332877090003091456?color=7289da&logo=discord&logoColor=white"
                 alt="Discord server" /></a>
-        <a href="https://www.npmjs.com/package/zhycorp.js"><img
-                src="https://img.shields.io/npm/v/zhycorp.js.svg?maxAge=3600" alt="NPM version" /></a>
-        <a href="https://www.npmjs.com/package/zhycorp.js"><img
-                src="https://img.shields.io/npm/dt/zhycorp.js.svg?maxAge=3600" alt="NPM downloads" /></a>
-        <a href="https://david-dm.org/zhycorp/zhycorp.js"><img
-                src="https://img.shields.io/david/zhycorp/zhycorp.js.svg?maxAge=3600" alt="Dependencies" /></a>
+        <a href="https://www.npmjs.com/package/node-zhycorp"><img
+                src="https://img.shields.io/npm/v/node-zhycorp.svg?maxAge=3600" alt="NPM version" /></a>
+        <a href="https://www.npmjs.com/package/node-zhycorp"><img
+                src="https://img.shields.io/npm/dt/node-zhycorp.svg?maxAge=3600" alt="NPM downloads" /></a>
+        <a href="https://david-dm.org/zhycorp/node-zhycorp"><img
+                src="https://img.shields.io/david/zhycorp/node-zhycorp.svg?maxAge=3600" alt="Dependencies" /></a>
     </p>
 </div>
 
@@ -31,17 +31,17 @@
 ## Installation
 
 ```bash
-$ yarn add zhycorp.js
+$ yarn add node-zhycorp
 ```
 or with NPM
 ```bash
-$ npm install zhycorp.js
+$ npm install node-zhycorp
 ```
 
 ## Usage
 - JavaScript: 
 ```js
-const { ZhycorpWrapper } = require("zhycorp.js");
+const { ZhycorpWrapper } = require("node-zhycorp");
 const Zhycorp = new ZhycorpWrapper();
 
 // Async/Await
@@ -56,7 +56,7 @@ Zhycorp.getBot("bot id").then(console.log).catch(console.error);
 
 - ES6:
 ```ts
-import { ZhycorpWrapper } from "zhycorp.js";
+import { ZhycorpWrapper } from "node-zhycorp";
 
 const Zhycorp = new ZhycorpWrapper();
 
@@ -73,12 +73,12 @@ Zhycorp.getBot("bot id").then(console.log).catch(console.error);
 ## Contributing
 
 Before creating an issue, please ensure that it hasn't already been reported/suggested,
-See [the contribution guide](https://github.com/zhycorp/zhycorp.js/blob/master/.github/CONTRIBUTING.md) if you'd like to submit a PR.
+See [the contribution guide](https://github.com/zhycorp/node-zhycorp/blob/master/.github/CONTRIBUTING.md) if you'd like to submit a PR.
 
 ## Links
 
 - [Website](https://zhycorp.xyz/)
-- [Zhycorp Discord server](https://zhycorp.xyz/discord)
-- [Documentation](https://github.com/zhycorp/zhycorp.js#usage)
-- [GitHub](https://github.com/zhycorp/zhycorp.js)
-- [NPM](https://www.npmjs.com/package/zhycorp.js)
+- [Discord server](https://zhycorp.xyz/discord)
+- [Documentation](https://github.com/zhycorp/node-zhycorp#usage)
+- [GitHub](https://github.com/zhycorp/node-zhycorp)
+- [NPM](https://www.npmjs.com/package/node-zhycorp)
