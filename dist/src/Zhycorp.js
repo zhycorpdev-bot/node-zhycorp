@@ -15,7 +15,7 @@ class ZhycorpWrapper {
     async getBot(id) {
         const USER_PATTERN = /\d{17,19}/g;
         if (!USER_PATTERN.test(id))
-            throw Error("Invalid user id!");
+            throw Error("Invalid user id");
         const { body: result } = await superagent_1.get(this.baseURL);
         if (!result[id])
             throw new ZhycorpError_1.default("Not Found");
