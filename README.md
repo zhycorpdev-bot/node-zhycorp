@@ -67,7 +67,7 @@ const Zhycorp = new ZhycorpWrapper();
 });
 
 // Then
-Zhycorp.getBot("id bot").then(console.log).catch(console.error);
+Zhycorp.getBot("bot id").then(console.log).catch(console.error);
 ```
 
 ## Contributing

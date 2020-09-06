@@ -11,8 +11,8 @@
   },
   "homepage": "https://github.com/zhycorp/zhycorp.js#readme",
   "keywords": [
-    "wrapper",
     "api",
+    "wrapper",
     "zhycorp"
   ],
   "author": "Zhycorp",
