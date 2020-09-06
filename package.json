@@ -1,7 +1,7 @@
 {
   "name": "zhycorp.js",
   "version": "1.0.1",
-  "description": "Simple API wrapper for Zhycorp Bot List",
+  "description": "A simple API wrapper for Zhycorp Nation Bot List, and written in TypeScript",
   "keywords": [
     "wrapper",
     "api",
