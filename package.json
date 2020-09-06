@@ -2,13 +2,21 @@
   "name": "zhycorp.js",
   "version": "1.0.1",
   "description": "A simple API wrapper for Zhycorp Nation Bot List, and written in TypeScript",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhycorp/zhycorp.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zhycorp/zhycorp.js/issues"
+  },
+  "homepage": "https://github.com/zhycorp/zhycorp.js#readme",
   "keywords": [
     "wrapper",
     "api",
     "zhycorp"
   ],
-  "license": "AGPL-3.0",
   "author": "Zhycorp",
+  "license": "AGPL-3.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
