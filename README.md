@@ -24,7 +24,7 @@
 
 ## Links
 
-- [Website](https://zhycorp.xyz/) ([source](https://github.com/zhycorp/website))
+- [Website](https://zhycorp.xyz/)
 - [Documentation](https://github.com/zhycorp/zhycorp.js#usage)
 - [Zhycorp Discord server](https://discord.gg/DxenCeV)
 - [GitHub](https://github.com/zhycorp/zhycorp.js)
