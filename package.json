@@ -1,15 +1,15 @@
 {
-  "name": "zhycorp.js",
-  "version": "1.0.2",
+  "name": "node-zhycorp",
+  "version": "1.0.0",
   "description": "A simple API wrapper for Zhycorp Nation Bot List, and written in TypeScript",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zhycorp/zhycorp.js.git"
+    "url": "git+https://github.com/zhycorp/node-zhycorp.git"
   },
   "bugs": {
-    "url": "https://github.com/zhycorp/zhycorp.js/issues"
+    "url": "https://github.com/zhycorp/node-zhycorp/issues"
   },
-  "homepage": "https://github.com/zhycorp/zhycorp.js#readme",
+  "homepage": "https://github.com/zhycorp/node-zhycorp#readme",
   "keywords": [
     "api",
     "wrapper",
