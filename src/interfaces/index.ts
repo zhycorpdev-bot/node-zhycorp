@@ -5,6 +5,6 @@ export interface Bot {
         userTag: string;
     };
     prefix: string;
-    approved: string;
-    registered: string;
+    approved: boolean;
+    registered: boolean;
 }
