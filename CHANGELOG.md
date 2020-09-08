@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.1](https://github.com/zhycorp/node-zhycorp/compare/v1.0.0...v1.0.1) (2020-09-08)
+
+
+### Bug Fixes
+
+* **typings:** fix getBot method return type is Promise<any> ([3530069](https://github.com/zhycorp/node-zhycorp/commit/35300698d651c71edfda539ba4306e6351ab4126))
+* **typings:** fix wrong types in the Bot interface ([e1a6cfc](https://github.com/zhycorp/node-zhycorp/commit/e1a6cfc450bc6fd15b3c80bf91de1bbd0490e15f))
+
 ## 1.0.0 (2020-09-06)
 
 
