@@ -70,6 +70,8 @@ const Zhycorp = new ZhycorpWrapper();
 Zhycorp.getBot("bot id").then(console.log).catch(console.error);
 ```
 
+[Click here](https://github.com/zhycorp/node-zhycorp/blob/master/examples) for more example.
+
 ## Contributing
 
 Before creating an issue, please ensure that it hasn't already been reported/suggested,
