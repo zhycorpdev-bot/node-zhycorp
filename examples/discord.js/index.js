@@ -17,7 +17,7 @@ client.on("message", async (message) => {
         const user = message.mentions.users.first() || await client.fetchUser(args[0]);
         if (!user || !user.bot) return message.channel.send("Please mention a bot");
         const result = await Zhycorp.getBot(user.id);
-        if (!result) return message.channel.send("That bot is not registered on Zhycorp database");
+        if (!result) return message.channel.send("That bot is not registered in the Zhycorp database");
         const embed = new MessageEmbed()
             .setColor("RANDOM")
             .setAuthor("Zhycorp Bot Informations")
