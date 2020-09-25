@@ -1,65 +1,3 @@
-<<<<<<< HEAD
-
-name: Lint & Compile code
-
-on:
-  push:
-    branches:
-      - master
-  pull_request:
-    branches:
-      - "**"
-
-jobs:
-  lint:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [12.x]
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2.3.2
-      
-    - name: Install Node v${{ matrix.node-version }}
-      uses: actions/setup-node@v2.1.1
-      with:
-        node-version: ${{ matrix.node-version }}
-
-    - name: Install dependencies
-      run: yarn install --frozen-lockfile
-
-    - name: Run Linter
-      run: yarn run lint
-  compile:
-    needs: lint
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [12.x]
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2.3.2
-
-    - name: Install Node v${{ matrix.node-version }}
-      uses: actions/setup-node@v2.1.1
-      with:
-        node-version: ${{ matrix.node-version }}
-
-    - name: Install dependencies
-      run: yarn install --frozen-lockfile
-    
-    - name: Compile code
-      run: yarn run build
-
-    - name: Push compiled code
-      run: |
-        git add dist -f
-        git config user.name "${GITHUB_ACTOR}"
-        git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-        git commit -m "chore(build) Build from ${GITHUB_SHA}" || true
-        git push origin ${GITHUB_REF}
-=======
-
 name: Lint & Compile code
 
 on:
@@ -118,5 +56,4 @@ jobs:
         git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
         git commit -m "chore(build) Build from ${GITHUB_SHA}" || true
         git push origin ${GITHUB_REF}
->>>>>>> 04dee5f6b91087b53e50415958f84d4ddb5da261
       continue-on-error: true
