@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.3](https://github.com/zhycorp/node-zhycorp/compare/v1.0.2...v1.0.3) (2020-10-24)
+
+
+### Bug Fixes
+
+* **ci:** fix changes conflicts ([a1f71b4](https://github.com/zhycorp/node-zhycorp/commit/a1f71b4a3089ec67a46c01ab588b8de8c89a8033))
+* **ci:** Ignore examples folder ([2c485dc](https://github.com/zhycorp/node-zhycorp/commit/2c485dc5e549d12b27cde250efa33b6f372d3c01))
+* **ci:** Ignore examples folder for eslint ([d928a77](https://github.com/zhycorp/node-zhycorp/commit/d928a77614f5d6e82f66a66a7061609f753bc4db))
+
 ### [1.0.2](https://github.com/zhycorp/node-zhycorp/compare/v1.0.1...v1.0.2) (2020-09-11)
 
 ### [1.0.1](https://github.com/zhycorp/node-zhycorp/compare/v1.0.0...v1.0.1) (2020-09-08)
