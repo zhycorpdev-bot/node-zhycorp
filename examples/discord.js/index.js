@@ -23,7 +23,7 @@ client.on("message", async (message) => {
             .setAuthor("Zhycorp Bot Informations")
             .addField("Bot Information", `\`\`\`\nBot Name: ${user.tag}\nBot ID: ${user.id}\nPrefix: ${result.prefix}\n\`\`\``)
             .addField("Owner Information", `\`\`\`\nOwner Name: ${result.owner.userTag}\nOwner ID: ${result.owner.userID}\n\`\`\``)
-            .setFooter("Powered by node-zhycorp", "https://api.zhycorp.xyz/assets/images/logo.png");
+            .setFooter("Powered by node-zhycorp", "https://api.zhycorp.com/assets/images/logo.png");
         return message.channel.send(embed);
     }
 });
