@@ -1,7 +1,7 @@
 <div align="center">
     <br />
     <p>
-        <a href="https://zhycorp.xyz"><img src="https://api.zhycorp.xyz/assets/images/logo.png" width="124" height="124"
+        <a href="https://zhycorp.xyz"><img src="https://api.zhycorp.com/assets/images/logo.png" width="124" height="124"
                 alt="node-zhycorp" /></a>
     </p>
     <br />
@@ -26,7 +26,7 @@
 - [Links](#links)
 
 ## About
-> A simple API wrapper for [Zhycorp Nation Bot List](https://zhycorp.xyz/bots), and written in TypeScript
+> A simple API wrapper for [Zhycorp Nation Bot List](https://zhycorp.com/bots), and written in TypeScript
 
 ## Installation
 
@@ -79,8 +79,8 @@ See [the contribution guide](https://github.com/zhycorp/node-zhycorp/blob/master
 
 ## Links
 
-- [Website](https://zhycorp.xyz/)
-- [Discord server](https://zhycorp.xyz/discord)
+- [Website](https://zhycorp.com/)
+- [Discord server](https://zhycorp.com/discord)
 - [Documentation](https://github.com/zhycorp/node-zhycorp#usage)
 - [GitHub](https://github.com/zhycorp/node-zhycorp)
 - [NPM](https://www.npmjs.com/package/node-zhycorp)
