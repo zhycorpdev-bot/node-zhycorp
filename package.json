@@ -11,9 +11,9 @@
   },
   "homepage": "https://github.com/zhycorp/node-zhycorp#readme",
   "keywords": [
+    "zhycorp",
     "api",
-    "wrapper",
-    "zhycorp"
+    "wrapper"
   ],
   "author": "Zhycorp",
   "license": "AGPL-3.0",
