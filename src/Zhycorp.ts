@@ -5,7 +5,7 @@ import ZhycorpError from "./util/ZhycorpError";
 import type { Bot } from "./interfaces";
 
 export class ZhycorpWrapper {
-    private readonly baseURL = "https://bot.zhycorp.xyz";
+    private readonly baseURL = "https://bot.zhycorp.com";
     public async getBot(id: string): Promise<Bot> {
         const USER_PATTERN = /\d{17,19}/g;
         if (!USER_PATTERN.test(id)) throw Error("Invalid user id");

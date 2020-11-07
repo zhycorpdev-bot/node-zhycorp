@@ -1,7 +1,7 @@
 import { get } from "superagent";
 import { load } from "cheerio";
 
-const botURL = "https://zhycorp.xyz/bot";
+const botURL = "https://zhycorp.com/bot";
 
 export async function getOwner(id: string): Promise<string> {
     const { text } = await get(`${botURL}/${id}`);
