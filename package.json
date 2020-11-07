@@ -39,7 +39,7 @@
     "superagent": "^6.1.0"
   },
   "devDependencies": {
-    "@hazmi35/eslint-config": "^2.0.0",
+    "@hazmi35/eslint-config": "^3.0.0",
     "@types/cheerio": "^0.22.21",
     "@types/node": "^14.6.4",
     "@types/superagent": "^4.1.10",
