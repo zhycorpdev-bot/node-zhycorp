@@ -2,7 +2,7 @@
 import { get } from "superagent";
 import { getOwner } from "./api/Bot";
 import ZhycorpError from "./util/ZhycorpError";
-import type { Bot } from "./interfaces";
+import { Bot } from "./interfaces";
 
 export class ZhycorpWrapper {
     private readonly baseURL = "https://bot.zhycorp.com";

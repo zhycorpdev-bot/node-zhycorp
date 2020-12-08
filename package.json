@@ -32,7 +32,7 @@
         "./tsconfig.json"
       ]
     },
-    "extends": "@hazmi35/eslint-config/typescript"
+    "extends": "@zhycorp/eslint-config/typescript"
   },
   "dependencies": {
     "@zhycorp/eslint-config": "^2.3.0",
