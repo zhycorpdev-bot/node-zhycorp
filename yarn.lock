@@ -181,9 +181,9 @@
     eslint-visitor-keys "^2.0.0"
 
 "@zhycorp/eslint-config@^2.3.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@zhycorp/eslint-config/-/eslint-config-2.3.0.tgz#411b14cb762f52d8ed7cbe359dde1b19c94b6888"
-  integrity sha512-0CDUvn/nWto1oZwsvpE13/N96GfEPdfSX5lpXviuwEFWODmH7S8oBB11HA6oPW7z7zun6HIFp1KdWpEVvcxzdg==
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/@zhycorp/eslint-config/-/eslint-config-2.4.0.tgz#dba9742e148ebb9efa3741ff16c01c28b9571272"
+  integrity sha512-aZfd9QFcAIh15BSw3FC7q9zhYf641SKqT1uObF1cOOm5FV+Y0hJt8xnSwEeaVsMixXXObM32se+Ry8k4dpolEQ==
   dependencies:
     "@hazmi35/eslint-config" "^3.3.0"
 
