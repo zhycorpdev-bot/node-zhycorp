@@ -35,7 +35,6 @@
     "extends": "@zhycorp/eslint-config/typescript"
   },
   "dependencies": {
-    "@zhycorp/eslint-config": "^2.3.0",
     "cheerio": "^1.0.0-rc.3",
     "superagent": "^6.1.0"
   },
@@ -46,6 +45,7 @@
     "@types/superagent": "^4.1.10",
     "@typescript-eslint/eslint-plugin": "^4.0.1",
     "@typescript-eslint/parser": "^4.0.1",
+    "@zhycorp/eslint-config": "^2.3.0",
     "eslint": "^7.8.1",
     "rimraf": "^3.0.2",
     "standard-version": "^9.0.0",
