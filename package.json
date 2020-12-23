@@ -1,6 +1,6 @@
 {
   "name": "node-zhycorp",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A simple API wrapper for Zhycorp Nation Bot List, and written in TypeScript",
   "repository": {
     "type": "git",

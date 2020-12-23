@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.1](https://github.com/zhycorp/node-zhycorp/compare/v1.2.0...v1.2.1) (2020-12-23)
+
+
+### Bug Fixes
+
+* **API:** Use Array#find since its array not an object ([#104](https://github.com/zhycorp/node-zhycorp/issues/104)) ([f2157a3](https://github.com/zhycorp/node-zhycorp/commit/f2157a37569d48084704a1779ae3e82cd9ce9309))
+
 ### [1.0.5](https://github.com/zhycorp/node-zhycorp/compare/v1.0.4...v1.0.5) (2020-11-07)
 
 ### [1.0.4](https://github.com/zhycorp/node-zhycorp/compare/v1.0.3...v1.0.4) (2020-11-07)
