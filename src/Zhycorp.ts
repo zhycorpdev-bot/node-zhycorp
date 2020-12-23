@@ -10,7 +10,7 @@ export class ZhycorpWrapper {
         const USER_PATTERN = /\d{17,19}/g;
         if (!USER_PATTERN.test(id)) throw Error("Invalid user id");
 
-        const { body: result } = await get(this.baseURL) ;
+        const { body: result } = await get(this.baseURL);
         if (!result.find((b: Bot) => b.botID === id)) throw new ZhycorpError("Not Found");
         const bot = result.find((b: Bot) => b.botID === id);
         const user = await getOwner(id);
