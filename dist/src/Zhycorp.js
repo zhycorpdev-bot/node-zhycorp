@@ -17,9 +17,9 @@ class ZhycorpWrapper {
         if (!USER_PATTERN.test(id))
             throw Error("Invalid user id");
         const { body: result } = await superagent_1.get(this.baseURL);
-        if (!result[id])
+        if (!result.find((b) => b.botID === id))
             throw new ZhycorpError_1.default("Not Found");
-        const bot = result[id];
+        const bot = result.find((b) => b.botID === id);
         const user = await Bot_1.getOwner(id);
         return {
             approved: bot.approved,
