@@ -182,7 +182,7 @@
     "@typescript-eslint/types" "4.15.1"
     eslint-visitor-keys "^2.0.0"
 
-"@zhycorp/eslint-config@^2.3.0":
+"@zhycorp/eslint-config@^2.5.0":
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/@zhycorp/eslint-config/-/eslint-config-2.5.0.tgz#775207dfc563adffe7de55624f6a7d6040f9a140"
   integrity sha512-0AI2CVsAtE64BlVSJvP5E43pJCpmR3VQOCLlH8YBbfKlhgvvEMM+oeIYFEYEzuOVFwZlxbfNCZjh97lkXiJXEQ==
