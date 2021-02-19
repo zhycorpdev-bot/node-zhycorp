@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.5](https://github.com/zhycorp/node-zhycorp/compare/v1.5.0...v1.5.5) (2020-02-19)
+
+### Fixes
+- **eslint:** Remove unnecessary dev dependencies, including [@hazmi35/eslint-config](https://www.npmjs.com/package/@hazmi35/eslint-config) since we have our own one
+
+### Features
+- **API:** Domain migration ~~zhycorp.xyz~~ > [zhycorp.com](https://zhycorp.com), New baseURL ([https://bot.zhycorp.com](https://bot.zhycorp.com))
+
 ### [1.5.0](https://github.com/zhycorp/node-zhycorp/compare/v1.2.1...v1.5.0) (2020-12-23)
 
 ### [1.2.1](https://github.com/zhycorp/node-zhycorp/compare/v1.2.0...v1.2.1) (2020-12-23)
