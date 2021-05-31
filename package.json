@@ -44,7 +44,7 @@
     "@types/superagent": "^4.1.10",
     "@typescript-eslint/eslint-plugin": "^4.0.1",
     "@typescript-eslint/parser": "^4.0.1",
-    "@zhycorp/eslint-config": "^2.5.0",
+    "@zhycorp/eslint-config": "^3.0.0",
     "eslint": "^7.8.1",
     "rimraf": "^3.0.2",
     "standard-version": "^9.0.0",
